@@ -1,0 +1,88 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* ================= HEADER ================= */
+
+.header {
+    display: flex;
+    align-items: center;          /* Vertical alignment */
+    justify-content: space-between; /* Space between sections */
+    padding: 15px 40px;
+    background-color: #1e293b;
+    color: white;
+}
+
+/* Logo */
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* Navigation */
+.nav {
+    display: flex;
+    gap: 25px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav a:hover {
+    color: #38bdf8;
+}
+
+/* Push button to right using margin-left */
+.cta {
+    margin-left: auto;
+}
+
+.cta button {
+    padding: 8px 18px;
+    border: none;
+    background-color: #38bdf8;
+    color: black;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.cta button:hover {
+    background-color: #0ea5e9;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+
+    .header {
+        flex-direction: column;   /* Stack vertically */
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .nav {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .cta {
+        width: 100%;
+    }
+
+    .cta button {
+        width: 100%;  /* Full width button */
+    }
+}

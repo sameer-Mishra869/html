@@ -1,35 +1,73 @@
-<html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flexbox Header</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Admin Panel</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header class="header">
+<div class="wrapper">
 
-        <!-- Left Section -->
-        <div class="logo">
-            webgride website.    
-        </div>
+  <!-- LEFT MENU -->
+  <div class="menu">
+    <h2 class="logo">FlexDash</h2>
 
-        <!-- Center Section -->
-        <nav class="nav">
+    <ul class="menu-links">
+      <li><a href="#">Dashboard</a></li>
+      <li><a href="#">Analytics</a></li>
+      <li><a href="#">Users</a></li>
+      <li><a href="#">Reports</a></li>
+      <li><a href="#">Settings</a></li>
+    </ul>
+  </div>
 
-            <a href="#">. Home</a>
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Contact</a>
-        </nav>
+  <!-- RIGHT CONTENT -->
+  <div class="content-area">
 
-        <!-- Right Section -->
-        <div class="cta">
-            <button>Get Started</button>
-        </div>
+    <!-- TOP HEADER -->
+    <div class="header-bar">
+      <input type="text" placeholder="Search dashboard..." class="search-box">
+      <div class="profile">Admin</div>
+    </div>
 
-    </header>
+    <!-- INFO BOXES -->
+    <div class="info-row">
+      <div class="info-box">
+        <h4>Users</h4>
+        <span>1,240</span>
+      </div>
+
+      <div class="info-box">
+        <h4>Revenue</h4>
+        <span>₹2.4L</span>
+      </div>
+
+      <div class="info-box">
+        <h4>Orders</h4>
+        <span>320</span>
+      </div>
+    </div>
+
+    <!-- PERFORMANCE ROW -->
+    <div class="performance-row">
+      <div class="performance-box">
+        <h4>Growth</h4>
+        <span>+18%</span>
+      </div>
+
+      <div class="performance-box">
+        <h4>Conversion</h4>
+        <span>5.4%</span>
+      </div>
+    </div>
+
+  </div>
+
+</div>
 
 </body>
 </html>
